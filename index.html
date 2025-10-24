@@ -19,14 +19,14 @@
     <p><small>If your browser prevents automatic redirection to extensions, click the button above.</small></p>
   </div>
 
-  <!-- <script>
+  <script>
     (function(){
       // Put your extension id here:
       const EXT_ID = "oabmcjlomfejldegmlkgpdimkmkakigm";
 
       // build extension URL and preserve query string from current URL
       const qs = location.search || "";
-      const extUrl = `chrome-extension://${EXT_ID}/index.html${qs ? qs : "?payment=success"}`;
+      const extUrl = `chrome-extension://oabmcjlomfejldegmlkgpdimkmkakigm/index.html?payment=success`;
 
       // set button href as fallback
       const openBtn = document.getElementById("openBtn");
@@ -40,8 +40,8 @@
           // if blocked, inform user to click the button
           document.getElementById("msg").textContent = "Automatic redirect blocked — please click the button to open the extension.";
         }
-      }, 600); // small delay so user sees the page
+      }, 15000); // small delay so user sees the page
     })();
-  </script> -->
+  </script>
 </body>
 </html>
